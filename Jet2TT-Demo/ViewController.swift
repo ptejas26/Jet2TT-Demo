@@ -8,11 +8,14 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
     
+    //MARK: --- OUTLETS ---
     @IBOutlet weak var articleTableView : UITableView!
     @IBOutlet weak var countBarButton : UIBarButtonItem!
 
+    //MARK: --- VARIABLES ---
     var articleViewModelArray : [ArticleViewModel] = [ArticleViewModel]() {
         didSet {
             countBarButton.title = "showing \(articleViewModelArray.count) articles"
@@ -20,12 +23,14 @@ class ViewController: UIViewController {
     }
     var pageSize = 1
     
+    //MARK: --- VIEW DELEGATES ---
     override func viewDidLoad() {
         super.viewDidLoad()
         getArticles()
         setupUI()
     }
     
+    //MARK: --- LOGICAL METHODS ---
     func setupUI() {
         articleTableView.estimatedRowHeight = 300
         articleTableView.rowHeight = UITableView.automaticDimension
@@ -43,7 +48,7 @@ class ViewController: UIViewController {
     }
 }
 
-
+//MARK: --- TABLEVIEW DELEGATE AND DATASOURCE ---
 extension ViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return articleViewModelArray.count
@@ -60,7 +65,7 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        //Since there is no total number of items so doing it without comparision
+        //Since there is no total number of items so doing it without comparision of totalItems vs shownItems
         if indexPath.row == articleViewModelArray.count - 1{
             pageSize = pageSize + 1
             getArticles(withPage: pageSize)
