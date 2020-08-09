@@ -3,7 +3,7 @@
 //  Jet2TT-DemoTests
 //
 //  Created by Tejas on 09/08/20.
-//  Copyright © 2020 GlobalLogic. All rights reserved.
+//  Copyright © 2020 Tejas Patelia. All rights reserved.
 //
 
 import XCTest

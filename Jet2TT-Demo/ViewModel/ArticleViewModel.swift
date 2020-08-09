@@ -3,7 +3,7 @@
 //  Jet2TT-Demo
 //
 //  Created by Tejas on 09/08/20.
-//  Copyright © 2020 GlobalLogic. All rights reserved.
+//  Copyright © 2020 Tejas Patelia. All rights reserved.
 //
 
 import Foundation
@@ -30,8 +30,35 @@ struct ArticleViewModel {
         return "\(article?.user?.first?.designation ?? "NA")"
     }
     
-    var articleImage: String {
-        return "\(article?.media?.first?.image ?? "articleplaceholder")"
+    var showArticleImage : (Bool, String) {
+        if let imgURL = article?.media?.first?.image {
+            return (false,imgURL)
+        } else {
+            return (true, "")
+        }
     }
     
+    var articleText : String {
+        return "\(article?.content ?? "NA")"
+    }
+    
+    var articleTitle : String {
+        return "\(article?.media?.first?.title ?? "NA")"
+    }
+    
+    var articleURL : String {
+        return "\(article?.media?.first?.url ?? "")"
+    }
+    
+    var articleLikes : String {
+        return "\(Utilities.returnHigherNumericValue(likes_comments: article?.likes ?? 0)) Likes"
+    }
+    
+    var articleComments : String {
+        return "\(Utilities.returnHigherNumericValue(likes_comments: article?.comments ?? 0)) Comments"
+    }
+    
+    var articleTime: Date {
+        return Utilities.convertFromISODate(strDate: article?.createdAt ?? "2020-04-14T10:44:00+0000") ?? Date()
+    }
 }

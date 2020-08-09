@@ -3,10 +3,11 @@
 //  Jet2TT-Demo
 //
 //  Created by Tejas on 09/08/20.
-//  Copyright © 2020 GlobalLogic. All rights reserved.
+//  Copyright © 2020 Tejas Patelia. All rights reserved.
 //
 
 import UIKit
+import Kingfisher
 
 class ArticlesTableViewCell: UITableViewCell {
     
@@ -27,7 +28,7 @@ class ArticlesTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        imgViewProfile.layer.cornerRadius = imgViewProfile.bounds.width / 2
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -36,4 +37,31 @@ class ArticlesTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    func updateCellDetails(articleViewModel: ArticleViewModel) {
+        
+        lblUserName.text = articleViewModel.fullName
+        lblDesignation.text = articleViewModel.userDesignation
+        lblArticlePostedTime.text = articleViewModel.postedTime
+
+        imgViewArticle.isHidden = articleViewModel.showArticleImage.0
+        imgViewArticle.downloadImage(urlString: articleViewModel.showArticleImage.1)
+        imgViewProfile.downloadImage(urlString: articleViewModel.userProfile)
+        
+        lblArticleText.text = articleViewModel.articleText
+        lblArticleURL.text = articleViewModel.articleURL
+        lblArticleTitle.text = articleViewModel.articleTitle
+
+        lblArticleLikes.text = articleViewModel.articleLikes
+        lblArticleComments.text = articleViewModel.articleComments
+            
+        lblArticlePostedTime.text = Utilities.calculateDateDifference(toDate: Date(), fromDate: articleViewModel.articleTime)
+        
+    }
+    
+    override func prepareForReuse() {
+        imgViewProfile.image = nil
+    }
 }
+
+
+

@@ -62,6 +62,9 @@
 		7497A2AD24E06A2F00020F6A /* ArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A2AC24E06A2F00020F6A /* ArticlesTableViewCell.swift */; };
 		7497A2AE24E06A2F00020F6A /* ArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A2AC24E06A2F00020F6A /* ArticlesTableViewCell.swift */; };
 		7497A2AF24E06A2F00020F6A /* ArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A2AC24E06A2F00020F6A /* ArticlesTableViewCell.swift */; };
+		7497A2B024E0720B00020F6A /* ResponseStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A2A724E0631600020F6A /* ResponseStatusCode.swift */; };
+		7497A2B124E0720B00020F6A /* ResponseStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A2A724E0631600020F6A /* ResponseStatusCode.swift */; };
+		7497A2B324E077C100020F6A /* ImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A2B224E077C100020F6A /* ImageView+Extension.swift */; };
 		D4EA39FB01313A3E39D695E3 /* Pods_Jet2TT_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6F24766E29A0070609A91D /* Pods_Jet2TT_Demo.framework */; };
 		E0C395CC4EE2740E55743028 /* Pods_Jet2TT_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C727A60840CECFC6999DCBC /* Pods_Jet2TT_DemoTests.framework */; };
 /* End PBXBuildFile section */
@@ -117,6 +120,7 @@
 		7497A2A324E0613800020F6A /* Jet2TT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jet2TT.xcdatamodel; sourceTree = "<group>"; };
 		7497A2A724E0631600020F6A /* ResponseStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStatusCode.swift; sourceTree = "<group>"; };
 		7497A2AC24E06A2F00020F6A /* ArticlesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewCell.swift; sourceTree = "<group>"; };
+		7497A2B224E077C100020F6A /* ImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+Extension.swift"; sourceTree = "<group>"; };
 		8C727A60840CECFC6999DCBC /* Pods_Jet2TT_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jet2TT_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF27AA1B698E38A434110BA4 /* Pods-Jet2TT-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jet2TT-DemoTests.debug.xcconfig"; path = "Target Support Files/Pods-Jet2TT-DemoTests/Pods-Jet2TT-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CF6F24766E29A0070609A91D /* Pods_Jet2TT_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jet2TT_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,7 +182,6 @@
 		745C988A24E03A19004873CB /* Jet2TT-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				7497A2A724E0631600020F6A /* ResponseStatusCode.swift */,
 				7497A2A224E0613800020F6A /* Jet2TT.xcdatamodeld */,
 				745C98CB24E048A9004873CB /* Model */,
 				745C98CC24E048B4004873CB /* View */,
@@ -251,6 +254,7 @@
 				7497A26D24E05E7B00020F6A /* StoryboardManager.swift */,
 				7497A26E24E05E7B00020F6A /* SkinManager.swift */,
 				7497A26F24E05E7B00020F6A /* Color+Extension.swift */,
+				7497A2B224E077C100020F6A /* ImageView+Extension.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -258,6 +262,7 @@
 		7497A29824E05E9200020F6A /* Service-Wrapper */ = {
 			isa = PBXGroup;
 			children = (
+				7497A2A724E0631600020F6A /* ResponseStatusCode.swift */,
 				7497A29924E05E9200020F6A /* APIManager.swift */,
 			);
 			path = "Service-Wrapper";
@@ -535,6 +540,7 @@
 				7497A28C24E05E7B00020F6A /* Color+Extension.swift in Sources */,
 				7497A28024E05E7B00020F6A /* UserDefaultManager.swift in Sources */,
 				7497A28624E05E7B00020F6A /* StoryboardManager.swift in Sources */,
+				7497A2B324E077C100020F6A /* ImageView+Extension.swift in Sources */,
 				7497A2A824E0631600020F6A /* ResponseStatusCode.swift in Sources */,
 				7497A28924E05E7B00020F6A /* SkinManager.swift in Sources */,
 				745C988C24E03A19004873CB /* AppDelegate.swift in Sources */,
@@ -555,6 +561,7 @@
 				745C98C624E04893004873CB /* User.swift in Sources */,
 				7497A28D24E05E7B00020F6A /* Color+Extension.swift in Sources */,
 				7497A28424E05E7B00020F6A /* Date+Extension.swift in Sources */,
+				7497A2B124E0720B00020F6A /* ResponseStatusCode.swift in Sources */,
 				7497A28724E05E7B00020F6A /* StoryboardManager.swift in Sources */,
 				745C98A324E03A1B004873CB /* Jet2TT_DemoTests.swift in Sources */,
 				745C98BD24E047E4004873CB /* ArticleViewModel.swift in Sources */,
@@ -578,6 +585,7 @@
 				745C98C724E04893004873CB /* User.swift in Sources */,
 				7497A28E24E05E7B00020F6A /* Color+Extension.swift in Sources */,
 				7497A28524E05E7B00020F6A /* Date+Extension.swift in Sources */,
+				7497A2B024E0720B00020F6A /* ResponseStatusCode.swift in Sources */,
 				7497A28824E05E7B00020F6A /* StoryboardManager.swift in Sources */,
 				745C98AE24E03A1B004873CB /* Jet2TT_DemoUITests.swift in Sources */,
 				745C98BE24E047E4004873CB /* ArticleViewModel.swift in Sources */,

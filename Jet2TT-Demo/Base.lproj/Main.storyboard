@@ -38,7 +38,7 @@
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHy-DD-9J6">
                                                             <rect key="frame" x="0.0" y="0.0" width="131.5" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -102,15 +102,16 @@
                                                 <constraint firstItem="lfU-3n-aj4" firstAttribute="centerY" secondItem="FpF-Ke-BG3" secondAttribute="centerY" id="EYK-gZ-R1m"/>
                                                 <constraint firstItem="3b7-rH-B0S" firstAttribute="centerX" secondItem="wMw-r0-2Zd" secondAttribute="centerX" id="GOv-o2-y3z"/>
                                                 <constraint firstItem="cfr-et-gZ6" firstAttribute="trailing" secondItem="H1f-Cd-g3m" secondAttribute="trailing" id="Lac-0m-3iu"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="3b7-rH-B0S" secondAttribute="bottom" constant="98.5" id="Zc1-IK-Mc5"/>
                                                 <constraint firstItem="YtH-1h-Lne" firstAttribute="top" secondItem="FpF-Ke-BG3" secondAttribute="top" id="ZeU-Sc-toM"/>
                                                 <constraint firstItem="FpF-Ke-BG3" firstAttribute="leading" secondItem="f6Q-vl-XXD" secondAttribute="leading" constant="20" id="aG5-jR-JEa"/>
                                                 <constraint firstItem="3b7-rH-B0S" firstAttribute="leading" secondItem="wMw-r0-2Zd" secondAttribute="leading" id="b8i-9S-1Y5"/>
                                                 <constraint firstItem="seI-Xh-2vK" firstAttribute="centerY" secondItem="MTq-zk-1EV" secondAttribute="centerY" id="bXW-on-aN5"/>
-                                                <constraint firstItem="H1f-Cd-g3m" firstAttribute="top" secondItem="3b7-rH-B0S" secondAttribute="bottom" constant="10" id="cM4-wJ-tHH"/>
                                                 <constraint firstItem="MTq-zk-1EV" firstAttribute="top" secondItem="cfr-et-gZ6" secondAttribute="bottom" constant="20" id="d6u-6F-99V"/>
                                                 <constraint firstItem="MTq-zk-1EV" firstAttribute="leading" secondItem="3b7-rH-B0S" secondAttribute="leading" id="gOe-Gf-QIe"/>
                                                 <constraint firstItem="3b7-rH-B0S" firstAttribute="trailing" secondItem="wMw-r0-2Zd" secondAttribute="trailing" id="hnV-fT-txO"/>
                                                 <constraint firstItem="wMw-r0-2Zd" firstAttribute="top" secondItem="FpF-Ke-BG3" secondAttribute="bottom" constant="20" id="jD6-gf-zRr"/>
+                                                <constraint firstItem="H1f-Cd-g3m" firstAttribute="top" secondItem="3b7-rH-B0S" secondAttribute="bottom" constant="10" id="jM8-8f-cit"/>
                                                 <constraint firstItem="H1f-Cd-g3m" firstAttribute="trailing" secondItem="3b7-rH-B0S" secondAttribute="trailing" id="kOV-lE-DSN"/>
                                                 <constraint firstItem="cfr-et-gZ6" firstAttribute="centerX" secondItem="H1f-Cd-g3m" secondAttribute="centerX" id="l5V-WR-gcq"/>
                                                 <constraint firstItem="H1f-Cd-g3m" firstAttribute="leading" secondItem="3b7-rH-B0S" secondAttribute="leading" id="mRy-dE-tIE"/>
@@ -122,8 +123,24 @@
                                                 <constraint firstItem="lfU-3n-aj4" firstAttribute="leading" secondItem="FpF-Ke-BG3" secondAttribute="trailing" constant="20" id="ygs-ci-2Rz"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgViewArticle" destination="wMw-r0-2Zd" id="TDb-Iq-Iqa"/>
+                                            <outlet property="imgViewProfile" destination="FpF-Ke-BG3" id="CF4-bP-IKk"/>
+                                            <outlet property="lblArticleComments" destination="seI-Xh-2vK" id="1ef-r3-ZC6"/>
+                                            <outlet property="lblArticleLikes" destination="MTq-zk-1EV" id="OB4-nz-Fzu"/>
+                                            <outlet property="lblArticlePostedTime" destination="YtH-1h-Lne" id="xtO-uZ-EAV"/>
+                                            <outlet property="lblArticleText" destination="3b7-rH-B0S" id="1w0-dF-f4c"/>
+                                            <outlet property="lblArticleTitle" destination="H1f-Cd-g3m" id="onb-jr-Q3G"/>
+                                            <outlet property="lblArticleURL" destination="cfr-et-gZ6" id="v1h-79-hTF"/>
+                                            <outlet property="lblDesignation" destination="2WL-WP-jcU" id="oVu-I0-E0o"/>
+                                            <outlet property="lblUserName" destination="mHy-DD-9J6" id="BAz-M6-Yul"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Y73-6x-850"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="87f-14-3nq"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -136,6 +153,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Articles" id="mq8-xG-8mF"/>
+                    <connections>
+                        <outlet property="articleTableView" destination="u84-U6-9kC" id="Bzm-IM-9gn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
