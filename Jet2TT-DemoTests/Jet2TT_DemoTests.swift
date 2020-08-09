@@ -2,8 +2,8 @@
 //  Jet2TT_DemoTests.swift
 //  Jet2TT-DemoTests
 //
-//  Created by GlobalLogic on 09/08/20.
-//  Copyright © 2020 Tejas. All rights reserved.
+//  Created by Tejas on 09/08/20.
+//  Copyright © 2020 GlobalLogic. All rights reserved.
 //
 
 import XCTest

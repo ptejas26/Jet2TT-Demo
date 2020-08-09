@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72E1724618178A80A49BC030 /* Pods_Jet2TT_Demo_Jet2TT_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0A94023750395856ECEFED /* Pods_Jet2TT_Demo_Jet2TT_DemoUITests.framework */; };
 		745C988C24E03A19004873CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C988B24E03A19004873CB /* AppDelegate.swift */; };
 		745C988E24E03A19004873CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C988D24E03A19004873CB /* SceneDelegate.swift */; };
 		745C989024E03A19004873CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C988F24E03A19004873CB /* ViewController.swift */; };
@@ -15,6 +16,54 @@
 		745C989824E03A1A004873CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 745C989624E03A1A004873CB /* LaunchScreen.storyboard */; };
 		745C98A324E03A1B004873CB /* Jet2TT_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C98A224E03A1B004873CB /* Jet2TT_DemoTests.swift */; };
 		745C98AE24E03A1B004873CB /* Jet2TT_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C98AD24E03A1B004873CB /* Jet2TT_DemoUITests.swift */; };
+		745C98BC24E047E4004873CB /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C98BB24E047E4004873CB /* ArticleViewModel.swift */; };
+		745C98BD24E047E4004873CB /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C98BB24E047E4004873CB /* ArticleViewModel.swift */; };
+		745C98BE24E047E4004873CB /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C98BB24E047E4004873CB /* ArticleViewModel.swift */; };
+		745C98C224E04893004873CB /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C98BF24E04893004873CB /* Media.swift */; };
+		745C98C324E04893004873CB /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C98BF24E04893004873CB /* Media.swift */; };
+		745C98C424E04893004873CB /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C98BF24E04893004873CB /* Media.swift */; };
+		745C98C524E04893004873CB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C98C024E04893004873CB /* User.swift */; };
+		745C98C624E04893004873CB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C98C024E04893004873CB /* User.swift */; };
+		745C98C724E04893004873CB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C98C024E04893004873CB /* User.swift */; };
+		745C98C824E04893004873CB /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C98C124E04893004873CB /* Article.swift */; };
+		745C98C924E04893004873CB /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C98C124E04893004873CB /* Article.swift */; };
+		745C98CA24E04893004873CB /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C98C124E04893004873CB /* Article.swift */; };
+		7497A27424E05E7B00020F6A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26524E05E7B00020F6A /* Constant.swift */; };
+		7497A27524E05E7B00020F6A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26524E05E7B00020F6A /* Constant.swift */; };
+		7497A27624E05E7B00020F6A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26524E05E7B00020F6A /* Constant.swift */; };
+		7497A27724E05E7B00020F6A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26724E05E7B00020F6A /* CoreDataManager.swift */; };
+		7497A27824E05E7B00020F6A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26724E05E7B00020F6A /* CoreDataManager.swift */; };
+		7497A27924E05E7B00020F6A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26724E05E7B00020F6A /* CoreDataManager.swift */; };
+		7497A27A24E05E7B00020F6A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26824E05E7B00020F6A /* Utilities.swift */; };
+		7497A27B24E05E7B00020F6A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26824E05E7B00020F6A /* Utilities.swift */; };
+		7497A27C24E05E7B00020F6A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26824E05E7B00020F6A /* Utilities.swift */; };
+		7497A28024E05E7B00020F6A /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26B24E05E7B00020F6A /* UserDefaultManager.swift */; };
+		7497A28124E05E7B00020F6A /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26B24E05E7B00020F6A /* UserDefaultManager.swift */; };
+		7497A28224E05E7B00020F6A /* UserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26B24E05E7B00020F6A /* UserDefaultManager.swift */; };
+		7497A28324E05E7B00020F6A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26C24E05E7B00020F6A /* Date+Extension.swift */; };
+		7497A28424E05E7B00020F6A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26C24E05E7B00020F6A /* Date+Extension.swift */; };
+		7497A28524E05E7B00020F6A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26C24E05E7B00020F6A /* Date+Extension.swift */; };
+		7497A28624E05E7B00020F6A /* StoryboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26D24E05E7B00020F6A /* StoryboardManager.swift */; };
+		7497A28724E05E7B00020F6A /* StoryboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26D24E05E7B00020F6A /* StoryboardManager.swift */; };
+		7497A28824E05E7B00020F6A /* StoryboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26D24E05E7B00020F6A /* StoryboardManager.swift */; };
+		7497A28924E05E7B00020F6A /* SkinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26E24E05E7B00020F6A /* SkinManager.swift */; };
+		7497A28A24E05E7B00020F6A /* SkinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26E24E05E7B00020F6A /* SkinManager.swift */; };
+		7497A28B24E05E7B00020F6A /* SkinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26E24E05E7B00020F6A /* SkinManager.swift */; };
+		7497A28C24E05E7B00020F6A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26F24E05E7B00020F6A /* Color+Extension.swift */; };
+		7497A28D24E05E7B00020F6A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26F24E05E7B00020F6A /* Color+Extension.swift */; };
+		7497A28E24E05E7B00020F6A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A26F24E05E7B00020F6A /* Color+Extension.swift */; };
+		7497A29A24E05E9200020F6A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A29924E05E9200020F6A /* APIManager.swift */; };
+		7497A29B24E05E9200020F6A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A29924E05E9200020F6A /* APIManager.swift */; };
+		7497A29C24E05E9200020F6A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A29924E05E9200020F6A /* APIManager.swift */; };
+		7497A2A424E0613800020F6A /* Jet2TT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7497A2A224E0613800020F6A /* Jet2TT.xcdatamodeld */; };
+		7497A2A524E0613800020F6A /* Jet2TT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7497A2A224E0613800020F6A /* Jet2TT.xcdatamodeld */; };
+		7497A2A624E0613800020F6A /* Jet2TT.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7497A2A224E0613800020F6A /* Jet2TT.xcdatamodeld */; };
+		7497A2A824E0631600020F6A /* ResponseStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A2A724E0631600020F6A /* ResponseStatusCode.swift */; };
+		7497A2AD24E06A2F00020F6A /* ArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A2AC24E06A2F00020F6A /* ArticlesTableViewCell.swift */; };
+		7497A2AE24E06A2F00020F6A /* ArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A2AC24E06A2F00020F6A /* ArticlesTableViewCell.swift */; };
+		7497A2AF24E06A2F00020F6A /* ArticlesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7497A2AC24E06A2F00020F6A /* ArticlesTableViewCell.swift */; };
+		D4EA39FB01313A3E39D695E3 /* Pods_Jet2TT_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6F24766E29A0070609A91D /* Pods_Jet2TT_Demo.framework */; };
+		E0C395CC4EE2740E55743028 /* Pods_Jet2TT_DemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C727A60840CECFC6999DCBC /* Pods_Jet2TT_DemoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +84,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C0A94023750395856ECEFED /* Pods_Jet2TT_Demo_Jet2TT_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jet2TT_Demo_Jet2TT_DemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DBEA49B15ED8C07FA8E99F2 /* Pods-Jet2TT-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jet2TT-Demo.release.xcconfig"; path = "Target Support Files/Pods-Jet2TT-Demo/Pods-Jet2TT-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		50376909BCD709A628677D15 /* Pods-Jet2TT-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jet2TT-DemoTests.release.xcconfig"; path = "Target Support Files/Pods-Jet2TT-DemoTests/Pods-Jet2TT-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		745C988824E03A19004873CB /* Jet2TT-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jet2TT-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		745C988B24E03A19004873CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		745C988D24E03A19004873CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +101,28 @@
 		745C98A924E03A1B004873CB /* Jet2TT-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jet2TT-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		745C98AD24E03A1B004873CB /* Jet2TT_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jet2TT_DemoUITests.swift; sourceTree = "<group>"; };
 		745C98AF24E03A1B004873CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		745C98BB24E047E4004873CB /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		745C98BF24E04893004873CB /* Media.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
+		745C98C024E04893004873CB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		745C98C124E04893004873CB /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		7497A26524E05E7B00020F6A /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		7497A26724E05E7B00020F6A /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		7497A26824E05E7B00020F6A /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		7497A26B24E05E7B00020F6A /* UserDefaultManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultManager.swift; sourceTree = "<group>"; };
+		7497A26C24E05E7B00020F6A /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		7497A26D24E05E7B00020F6A /* StoryboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardManager.swift; sourceTree = "<group>"; };
+		7497A26E24E05E7B00020F6A /* SkinManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkinManager.swift; sourceTree = "<group>"; };
+		7497A26F24E05E7B00020F6A /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		7497A29924E05E9200020F6A /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		7497A2A324E0613800020F6A /* Jet2TT.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jet2TT.xcdatamodel; sourceTree = "<group>"; };
+		7497A2A724E0631600020F6A /* ResponseStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStatusCode.swift; sourceTree = "<group>"; };
+		7497A2AC24E06A2F00020F6A /* ArticlesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesTableViewCell.swift; sourceTree = "<group>"; };
+		8C727A60840CECFC6999DCBC /* Pods_Jet2TT_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jet2TT_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF27AA1B698E38A434110BA4 /* Pods-Jet2TT-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jet2TT-DemoTests.debug.xcconfig"; path = "Target Support Files/Pods-Jet2TT-DemoTests/Pods-Jet2TT-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF6F24766E29A0070609A91D /* Pods_Jet2TT_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jet2TT_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC1CE8DE37AFF1B1B913737 /* Pods-Jet2TT-Demo-Jet2TT-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jet2TT-Demo-Jet2TT-DemoUITests.release.xcconfig"; path = "Target Support Files/Pods-Jet2TT-Demo-Jet2TT-DemoUITests/Pods-Jet2TT-Demo-Jet2TT-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F7346C6A3611900C9F59113C /* Pods-Jet2TT-Demo-Jet2TT-DemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jet2TT-Demo-Jet2TT-DemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Jet2TT-Demo-Jet2TT-DemoUITests/Pods-Jet2TT-Demo-Jet2TT-DemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB4447C406BA8FA665BD2B5A /* Pods-Jet2TT-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jet2TT-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Jet2TT-Demo/Pods-Jet2TT-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4EA39FB01313A3E39D695E3 /* Pods_Jet2TT_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0C395CC4EE2740E55743028 /* Pods_Jet2TT_DemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72E1724618178A80A49BC030 /* Pods_Jet2TT_Demo_Jet2TT_DemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +160,8 @@
 				745C98A124E03A1B004873CB /* Jet2TT-DemoTests */,
 				745C98AC24E03A1B004873CB /* Jet2TT-DemoUITests */,
 				745C988924E03A19004873CB /* Products */,
+				A97836754526866590DAF50B /* Pods */,
+				C41900A1B1358CBB21A8CA77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +178,13 @@
 		745C988A24E03A19004873CB /* Jet2TT-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				7497A2A724E0631600020F6A /* ResponseStatusCode.swift */,
+				7497A2A224E0613800020F6A /* Jet2TT.xcdatamodeld */,
+				745C98CB24E048A9004873CB /* Model */,
+				745C98CC24E048B4004873CB /* View */,
+				745C98CD24E048BA004873CB /* ViewModel */,
+				7497A29824E05E9200020F6A /* Service-Wrapper */,
+				7497A26624E05E7B00020F6A /* Utilities */,
 				745C988B24E03A19004873CB /* AppDelegate.swift */,
 				745C988D24E03A19004873CB /* SceneDelegate.swift */,
 				745C988F24E03A19004873CB /* ViewController.swift */,
@@ -128,6 +214,78 @@
 			path = "Jet2TT-DemoUITests";
 			sourceTree = "<group>";
 		};
+		745C98CB24E048A9004873CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				745C98C124E04893004873CB /* Article.swift */,
+				745C98BF24E04893004873CB /* Media.swift */,
+				745C98C024E04893004873CB /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		745C98CC24E048B4004873CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7497A2AC24E06A2F00020F6A /* ArticlesTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		745C98CD24E048BA004873CB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				745C98BB24E047E4004873CB /* ArticleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7497A26624E05E7B00020F6A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7497A26524E05E7B00020F6A /* Constant.swift */,
+				7497A26724E05E7B00020F6A /* CoreDataManager.swift */,
+				7497A26824E05E7B00020F6A /* Utilities.swift */,
+				7497A26B24E05E7B00020F6A /* UserDefaultManager.swift */,
+				7497A26C24E05E7B00020F6A /* Date+Extension.swift */,
+				7497A26D24E05E7B00020F6A /* StoryboardManager.swift */,
+				7497A26E24E05E7B00020F6A /* SkinManager.swift */,
+				7497A26F24E05E7B00020F6A /* Color+Extension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7497A29824E05E9200020F6A /* Service-Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				7497A29924E05E9200020F6A /* APIManager.swift */,
+			);
+			path = "Service-Wrapper";
+			sourceTree = "<group>";
+		};
+		A97836754526866590DAF50B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB4447C406BA8FA665BD2B5A /* Pods-Jet2TT-Demo.debug.xcconfig */,
+				0DBEA49B15ED8C07FA8E99F2 /* Pods-Jet2TT-Demo.release.xcconfig */,
+				F7346C6A3611900C9F59113C /* Pods-Jet2TT-Demo-Jet2TT-DemoUITests.debug.xcconfig */,
+				EFC1CE8DE37AFF1B1B913737 /* Pods-Jet2TT-Demo-Jet2TT-DemoUITests.release.xcconfig */,
+				BF27AA1B698E38A434110BA4 /* Pods-Jet2TT-DemoTests.debug.xcconfig */,
+				50376909BCD709A628677D15 /* Pods-Jet2TT-DemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C41900A1B1358CBB21A8CA77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF6F24766E29A0070609A91D /* Pods_Jet2TT_Demo.framework */,
+				0C0A94023750395856ECEFED /* Pods_Jet2TT_Demo_Jet2TT_DemoUITests.framework */,
+				8C727A60840CECFC6999DCBC /* Pods_Jet2TT_DemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 745C98B224E03A1B004873CB /* Build configuration list for PBXNativeTarget "Jet2TT-Demo" */;
 			buildPhases = (
+				6402EDD3A64495B1734E7FC5 /* [CP] Check Pods Manifest.lock */,
 				745C988424E03A19004873CB /* Sources */,
 				745C988524E03A19004873CB /* Frameworks */,
 				745C988624E03A19004873CB /* Resources */,
+				1BC050DAC4762C554C5F230E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +312,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 745C98B524E03A1B004873CB /* Build configuration list for PBXNativeTarget "Jet2TT-DemoTests" */;
 			buildPhases = (
+				4D9A19B73236BD166BA42F14 /* [CP] Check Pods Manifest.lock */,
 				745C989A24E03A1B004873CB /* Sources */,
 				745C989B24E03A1B004873CB /* Frameworks */,
 				745C989C24E03A1B004873CB /* Resources */,
@@ -170,9 +331,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 745C98B824E03A1B004873CB /* Build configuration list for PBXNativeTarget "Jet2TT-DemoUITests" */;
 			buildPhases = (
+				6C378C15E269ACB0F3DF3840 /* [CP] Check Pods Manifest.lock */,
 				745C98A524E03A1B004873CB /* Sources */,
 				745C98A624E03A1B004873CB /* Frameworks */,
 				745C98A724E03A1B004873CB /* Resources */,
+				B7E4ED3EE0777F76CF4B9536 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,14 +417,133 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BC050DAC4762C554C5F230E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jet2TT-Demo/Pods-Jet2TT-Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jet2TT-Demo/Pods-Jet2TT-Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Jet2TT-Demo/Pods-Jet2TT-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D9A19B73236BD166BA42F14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jet2TT-DemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6402EDD3A64495B1734E7FC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jet2TT-Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C378C15E269ACB0F3DF3840 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jet2TT-Demo-Jet2TT-DemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7E4ED3EE0777F76CF4B9536 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jet2TT-Demo-Jet2TT-DemoUITests/Pods-Jet2TT-Demo-Jet2TT-DemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jet2TT-Demo-Jet2TT-DemoUITests/Pods-Jet2TT-Demo-Jet2TT-DemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Jet2TT-Demo-Jet2TT-DemoUITests/Pods-Jet2TT-Demo-Jet2TT-DemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		745C988424E03A19004873CB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745C98C824E04893004873CB /* Article.swift in Sources */,
 				745C989024E03A19004873CB /* ViewController.swift in Sources */,
+				7497A28324E05E7B00020F6A /* Date+Extension.swift in Sources */,
+				7497A2AD24E06A2F00020F6A /* ArticlesTableViewCell.swift in Sources */,
+				745C98BC24E047E4004873CB /* ArticleViewModel.swift in Sources */,
+				7497A27424E05E7B00020F6A /* Constant.swift in Sources */,
+				745C98C524E04893004873CB /* User.swift in Sources */,
+				7497A28C24E05E7B00020F6A /* Color+Extension.swift in Sources */,
+				7497A28024E05E7B00020F6A /* UserDefaultManager.swift in Sources */,
+				7497A28624E05E7B00020F6A /* StoryboardManager.swift in Sources */,
+				7497A2A824E0631600020F6A /* ResponseStatusCode.swift in Sources */,
+				7497A28924E05E7B00020F6A /* SkinManager.swift in Sources */,
 				745C988C24E03A19004873CB /* AppDelegate.swift in Sources */,
+				7497A29A24E05E9200020F6A /* APIManager.swift in Sources */,
+				7497A27724E05E7B00020F6A /* CoreDataManager.swift in Sources */,
 				745C988E24E03A19004873CB /* SceneDelegate.swift in Sources */,
+				7497A2A424E0613800020F6A /* Jet2TT.xcdatamodeld in Sources */,
+				7497A27A24E05E7B00020F6A /* Utilities.swift in Sources */,
+				745C98C224E04893004873CB /* Media.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +551,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7497A2AE24E06A2F00020F6A /* ArticlesTableViewCell.swift in Sources */,
+				745C98C624E04893004873CB /* User.swift in Sources */,
+				7497A28D24E05E7B00020F6A /* Color+Extension.swift in Sources */,
+				7497A28424E05E7B00020F6A /* Date+Extension.swift in Sources */,
+				7497A28724E05E7B00020F6A /* StoryboardManager.swift in Sources */,
 				745C98A324E03A1B004873CB /* Jet2TT_DemoTests.swift in Sources */,
+				745C98BD24E047E4004873CB /* ArticleViewModel.swift in Sources */,
+				745C98C324E04893004873CB /* Media.swift in Sources */,
+				7497A28124E05E7B00020F6A /* UserDefaultManager.swift in Sources */,
+				7497A2A524E0613800020F6A /* Jet2TT.xcdatamodeld in Sources */,
+				745C98C924E04893004873CB /* Article.swift in Sources */,
+				7497A27824E05E7B00020F6A /* CoreDataManager.swift in Sources */,
+				7497A28A24E05E7B00020F6A /* SkinManager.swift in Sources */,
+				7497A29B24E05E9200020F6A /* APIManager.swift in Sources */,
+				7497A27B24E05E7B00020F6A /* Utilities.swift in Sources */,
+				7497A27524E05E7B00020F6A /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +574,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7497A2AF24E06A2F00020F6A /* ArticlesTableViewCell.swift in Sources */,
+				745C98C724E04893004873CB /* User.swift in Sources */,
+				7497A28E24E05E7B00020F6A /* Color+Extension.swift in Sources */,
+				7497A28524E05E7B00020F6A /* Date+Extension.swift in Sources */,
+				7497A28824E05E7B00020F6A /* StoryboardManager.swift in Sources */,
 				745C98AE24E03A1B004873CB /* Jet2TT_DemoUITests.swift in Sources */,
+				745C98BE24E047E4004873CB /* ArticleViewModel.swift in Sources */,
+				745C98C424E04893004873CB /* Media.swift in Sources */,
+				7497A28224E05E7B00020F6A /* UserDefaultManager.swift in Sources */,
+				7497A2A624E0613800020F6A /* Jet2TT.xcdatamodeld in Sources */,
+				745C98CA24E04893004873CB /* Article.swift in Sources */,
+				7497A27924E05E7B00020F6A /* CoreDataManager.swift in Sources */,
+				7497A28B24E05E7B00020F6A /* SkinManager.swift in Sources */,
+				7497A29C24E05E9200020F6A /* APIManager.swift in Sources */,
+				7497A27C24E05E7B00020F6A /* Utilities.swift in Sources */,
+				7497A27624E05E7B00020F6A /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +744,7 @@
 		};
 		745C98B324E03A1B004873CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB4447C406BA8FA665BD2B5A /* Pods-Jet2TT-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +763,7 @@
 		};
 		745C98B424E03A1B004873CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DBEA49B15ED8C07FA8E99F2 /* Pods-Jet2TT-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +782,7 @@
 		};
 		745C98B624E03A1B004873CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF27AA1B698E38A434110BA4 /* Pods-Jet2TT-DemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +805,7 @@
 		};
 		745C98B724E03A1B004873CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50376909BCD709A628677D15 /* Pods-Jet2TT-DemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +828,7 @@
 		};
 		745C98B924E03A1B004873CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7346C6A3611900C9F59113C /* Pods-Jet2TT-Demo-Jet2TT-DemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +849,7 @@
 		};
 		745C98BA24E03A1B004873CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC1CE8DE37AFF1B1B913737 /* Pods-Jet2TT-Demo-Jet2TT-DemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -590,6 +908,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7497A2A224E0613800020F6A /* Jet2TT.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7497A2A324E0613800020F6A /* Jet2TT.xcdatamodel */,
+			);
+			currentVersion = 7497A2A324E0613800020F6A /* Jet2TT.xcdatamodel */;
+			path = Jet2TT.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 745C988024E03A19004873CB /* Project object */;
 }
