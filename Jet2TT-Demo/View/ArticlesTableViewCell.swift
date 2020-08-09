@@ -18,6 +18,8 @@ class ArticlesTableViewCell: UITableViewCell {
     @IBOutlet weak var lblArticlePostedTime : UILabel!
     //*********
     @IBOutlet weak var imgViewArticle : UIImageView!
+    @IBOutlet weak var imgViewArticleHeightConstraint : NSLayoutConstraint!
+
     @IBOutlet weak var lblArticleText : UILabel!
     @IBOutlet weak var lblArticleTitle : UILabel!
     @IBOutlet weak var lblArticleURL : UILabel!
@@ -44,8 +46,16 @@ class ArticlesTableViewCell: UITableViewCell {
         lblArticlePostedTime.text = articleViewModel.postedTime
 
         imgViewArticle.isHidden = articleViewModel.showArticleImage.0
-        imgViewArticle.downloadImage(urlString: articleViewModel.showArticleImage.1)
-        imgViewProfile.downloadImage(urlString: articleViewModel.userProfile)
+        
+        //This is the case when the article image is not avaiable so hiding the imgView
+        imgViewArticle.downloadImage(urlString: articleViewModel.showArticleImage.1) { (status) in
+            if status == false {
+                self.imgViewArticleHeightConstraint.constant = 0
+            }else{
+                self.imgViewArticleHeightConstraint.constant = 150
+            }
+        }
+        imgViewProfile.downloadImage(profile: true, urlString: articleViewModel.userProfile, completionHandler: nil)
         
         lblArticleText.text = articleViewModel.articleText
         lblArticleURL.text = articleViewModel.articleURL

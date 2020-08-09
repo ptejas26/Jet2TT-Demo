@@ -20,4 +20,7 @@ struct Constant {
     struct TableViewCellIdentifier {
         static let ArticlesIdentifer = "ArticlesTableViewCell"
     }
+    struct APICallPageLimit {
+        static let Limit = 10
+    }
 }

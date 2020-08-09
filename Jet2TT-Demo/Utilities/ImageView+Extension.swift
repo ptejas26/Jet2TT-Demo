@@ -11,12 +11,12 @@ import Kingfisher
 
 extension UIImageView {
     
-    func downloadImage(urlString : String) {
+    func downloadImage(profile: Bool = false , urlString : String, completionHandler: ((Bool?)-> ())?) {
         let url = URL(string: urlString)
         self.kf.indicatorType = .activity
         self.kf.setImage(
             with: url,
-            placeholder: UIImage(named: "placeholderImage"),
+            placeholder: profile ? UIImage(named: "avatarDefault") : UIImage(named: "placeholderImage"),
             options: [
                 .scaleFactor(UIScreen.main.scale),
                 .transition(.fade(1)),
@@ -24,13 +24,14 @@ extension UIImageView {
             ])
         {
             result in
+            
+            guard let compHander = completionHandler else {return}
+            
             switch result {
-            //case .success(let value):
-                //print("Task done for: \(value.source.url?.absoluteString ?? "")")
-            case .failure(let error):
-                print("Job failed: \(error.localizedDescription)")
+            case .failure:
+                compHander(false)
             case .success(_):
-                print()
+                compHander(true)
             }
         }
     }

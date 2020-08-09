@@ -14,7 +14,7 @@ class APIManager : NSObject {
     private override init() {}
     
     
-    public func getArticles(page : Int = 1, limit: Int = 10, completionHandler: @escaping (([Article])->())){
+    public func getArticles(page : Int, limit: Int, completionHandler: @escaping (([Article])->())){
         
         AF.request(Constant.API_URLS.get_articles + "page=\(page)&limit=\(limit)").response { response in
             debugPrint(response)
