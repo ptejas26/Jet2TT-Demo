@@ -10,9 +10,20 @@ import Foundation
 
 struct ArticleViewModel {
     
-    init(article : Article) {
-        self.article = article
-    }
+    
+    
+//    init(article : Article) {
+//        self.article = article
+//    }
+    
+    
+    
+    //    var articleViewModelArray : [ArticleViewModel] = [ArticleViewModel]() {
+    //        didSet {
+    //            countBarButton.title = "showing \(articleViewModelArray.count) articles"
+    //        }
+    //    }
+
     
     var article: Article?
     

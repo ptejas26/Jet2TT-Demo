@@ -39,8 +39,8 @@ class ArticlesTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func updateCellDetails(articleViewModel: ArticleViewModel) {
-        
+    func updateCellDetails(articleViewModel: ArticleViewModel?) {
+        guard let articleViewModel = articleViewModel else {return}
         lblUserName.text = articleViewModel.fullName
         lblDesignation.text = articleViewModel.userDesignation
         lblArticlePostedTime.text = articleViewModel.postedTime

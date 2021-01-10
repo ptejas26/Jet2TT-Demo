@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		556DD58E25AADCC30070DC4D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556DD58D25AADCC30070DC4D /* HomeViewModel.swift */; };
+		556DD58F25AADCC30070DC4D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556DD58D25AADCC30070DC4D /* HomeViewModel.swift */; };
+		556DD59025AADCC30070DC4D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556DD58D25AADCC30070DC4D /* HomeViewModel.swift */; };
 		72E1724618178A80A49BC030 /* Pods_Jet2TT_Demo_Jet2TT_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C0A94023750395856ECEFED /* Pods_Jet2TT_Demo_Jet2TT_DemoUITests.framework */; };
 		745C988C24E03A19004873CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C988B24E03A19004873CB /* AppDelegate.swift */; };
 		745C988E24E03A19004873CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745C988D24E03A19004873CB /* SceneDelegate.swift */; };
@@ -90,6 +93,7 @@
 		0C0A94023750395856ECEFED /* Pods_Jet2TT_Demo_Jet2TT_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jet2TT_Demo_Jet2TT_DemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DBEA49B15ED8C07FA8E99F2 /* Pods-Jet2TT-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jet2TT-Demo.release.xcconfig"; path = "Target Support Files/Pods-Jet2TT-Demo/Pods-Jet2TT-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		50376909BCD709A628677D15 /* Pods-Jet2TT-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jet2TT-DemoTests.release.xcconfig"; path = "Target Support Files/Pods-Jet2TT-DemoTests/Pods-Jet2TT-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		556DD58D25AADCC30070DC4D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		745C988824E03A19004873CB /* Jet2TT-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jet2TT-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		745C988B24E03A19004873CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		745C988D24E03A19004873CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -239,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				745C98BB24E047E4004873CB /* ArticleViewModel.swift */,
+				556DD58D25AADCC30070DC4D /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -546,6 +551,7 @@
 				745C988C24E03A19004873CB /* AppDelegate.swift in Sources */,
 				7497A29A24E05E9200020F6A /* APIManager.swift in Sources */,
 				7497A27724E05E7B00020F6A /* CoreDataManager.swift in Sources */,
+				556DD58E25AADCC30070DC4D /* HomeViewModel.swift in Sources */,
 				745C988E24E03A19004873CB /* SceneDelegate.swift in Sources */,
 				7497A2A424E0613800020F6A /* Jet2TT.xcdatamodeld in Sources */,
 				7497A27A24E05E7B00020F6A /* Utilities.swift in Sources */,
@@ -558,6 +564,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7497A2AE24E06A2F00020F6A /* ArticlesTableViewCell.swift in Sources */,
+				556DD58F25AADCC30070DC4D /* HomeViewModel.swift in Sources */,
 				745C98C624E04893004873CB /* User.swift in Sources */,
 				7497A28D24E05E7B00020F6A /* Color+Extension.swift in Sources */,
 				7497A28424E05E7B00020F6A /* Date+Extension.swift in Sources */,
@@ -582,6 +589,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7497A2AF24E06A2F00020F6A /* ArticlesTableViewCell.swift in Sources */,
+				556DD59025AADCC30070DC4D /* HomeViewModel.swift in Sources */,
 				745C98C724E04893004873CB /* User.swift in Sources */,
 				7497A28E24E05E7B00020F6A /* Color+Extension.swift in Sources */,
 				7497A28524E05E7B00020F6A /* Date+Extension.swift in Sources */,

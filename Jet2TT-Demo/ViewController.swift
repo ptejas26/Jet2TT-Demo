@@ -16,17 +16,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var countBarButton : UIBarButtonItem!
 
     //MARK: --- VARIABLES ---
-    var articleViewModelArray : [ArticleViewModel] = [ArticleViewModel]() {
-        didSet {
-            countBarButton.title = "showing \(articleViewModelArray.count) articles"
+    
+    var homeViewModel = HomeViewModel()
+    var pageSize = 1{
+        didSet{
+            homeViewModel.page = pageSize
         }
     }
-    var pageSize = 1
     
     //MARK: --- VIEW DELEGATES ---
     override func viewDidLoad() {
         super.viewDidLoad()
-        getArticles()
+        homeViewModel.viewDidLoad()
+        homeViewModel.reloadTableClosure = {
+            self.articleTableView.reloadData()
+        }
         setupUI()
     }
     
@@ -36,28 +40,19 @@ class ViewController: UIViewController {
         articleTableView.rowHeight = UITableView.automaticDimension
     }
     
-    func getArticles(withPage page:Int = 1, andlimit limit:Int = Constant.APICallPageLimit.Limit) {
-        APIManager.sharedInstance.getArticles(page: page, limit: limit) { (articles) in
-            if articles.count > 0 {
-                for article in articles {
-                    self.articleViewModelArray.append(ArticleViewModel(article: article))
-                }
-                self.articleTableView.reloadData()
-            }
-        }
-    }
 }
 
 //MARK: --- TABLEVIEW DELEGATE AND DATASOURCE ---
 extension ViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return articleViewModelArray.count
+        return homeViewModel.countOfArticles
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let articleCell = tableView.dequeueReusableCell(withIdentifier: Constant.TableViewCellIdentifier.ArticlesIdentifer) as? ArticlesTableViewCell else {return UITableViewCell()}
-        articleCell.updateCellDetails(articleViewModel: articleViewModelArray[indexPath.row])
+        let articleVM = homeViewModel.returnModelFor(indexpath: indexPath)
+        articleCell.updateCellDetails(articleViewModel: articleVM)
         return articleCell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -66,9 +61,12 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         //Since there is no total number of items so doing it without comparision of totalItems vs shownItems
-        if indexPath.row == articleViewModelArray.count - 1{
+        if indexPath.row == homeViewModel.countOfArticles - 1{
             pageSize = pageSize + 1
-            getArticles(withPage: pageSize)
+            homeViewModel.getArticles()
+            homeViewModel.reloadTableClosure = {
+                self.articleTableView.reloadData()
+            }
         }
     }
     
@@ -76,4 +74,3 @@ extension ViewController : UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: false)
     }
 }
-
