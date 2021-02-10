@@ -11,6 +11,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+	//This is the first comment.
     //MARK: --- OUTLETS ---
     @IBOutlet weak var articleTableView : UITableView!
     @IBOutlet weak var countBarButton : UIBarButtonItem!
